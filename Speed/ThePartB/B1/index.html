@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple image filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <!--The canvas-->
+        <div class="canvas">
+            <img src="assets/athena.jpg" alt="Athena" id="image-in-canvas">
+            <img src="" alt="" id="result-image">
+        </div>
+
+        
+        <div class="options">
+            <!--Dropdown list to select image-->
+            <label for="photos">Image:</label>
+            <select name="photos" id="photoSelector">
+                <option value="Athena">Athena</option>
+                <option value="Mona lisa">Mona Lisa</option>
+                <option value="The Kiss">The Kiss</option>
+                <option value="Young Pearl">Young Pearl</option>
+            </select>
+
+
+            <!--Dropdown list to select filter-->
+            <label for="Filter">Filter:</label>
+            <select name="Filter" id="filter">
+                <option value="filter">Filter</option>
+                <option value="brighten">Brighten</option>
+                <option value="darken">Darken</option>
+
+            </select>
+        </div>
+
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.canvas {
+    width: 460px;
+    height: 320px;
+    background-color: green;
+}
+
+#result-image {
+    margin-left: 20px;
+}
