@@ -1,0 +1,15 @@
+#image {
+    /*resizing and centering image*/
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: grayscale(100%);/*applying grayscale filter*/
+    transition: 0.5s;
+}
+
+#image:hover{
+    filter: grayscale(0%);/*Taking away filter when user hovers*/
+}
