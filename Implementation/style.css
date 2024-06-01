@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --green: #00FF70;
+    --blue: #47B8BF;
+    --white: #FFF;
+    --gray: #F4F4F4;
+    --black: #212121;
+}
+
+@font-face {
+    font-family: h1Font;
+    src: url('assets/fonts/Asap-SemiBoldItalic.ttf');
+}
+
+@font-face {
+    font-family: actionsFont;
+    src: url('assets/fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: pFont;
+    src: url('assets/fonts/Roboto-Regular.ttf');
+}
+
+p {
+    font-family: 'pFont', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'h1Font', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--black);
+}
+  
+  li {
+    float: left;
+}
+  
+  li a {
+    display: block;
+    color: var(--white);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.8s;
+    font-family: 'pFont', sans-serif;
+}
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: var(--gray);
+
+
+}
+
+
+
+.active {
+    background-color: var(--blue);
+}
+
+.logo-image {
+    width: 30%;
+    height: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.image-with-heading {
+    background-image: url('assets/photos/abbaye.jpg');
+    text-align: center;
+    color: var(--white);
+    width: 120vh;
+    height: 90vh;
+    line-height: 30vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    transition: 2s ease-in-out;
+    font-size: 2rem;
+    margin-top: 5%;
+    border: solid 3px var(--gray);
+}
+
+h2 {
+    background-color: var(--green);
+    color: var(--white);
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    text-align: center;
+    margin-top: 5%;
+    border-radius: 1rem;
+    border: solid 3px var(--gray);
+}
+
+.in-row-text-boxes {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 1.5rem;
+}
+
+.in-row-text-boxes p {
+    margin-left: 1rem;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    border: solid 3px var(--gray);
+}
+
+.image-left-text-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.image-left-text-right img {
+    width: 90%;
+    height: 90%;
+
+}
+
+.textboxes {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    border: solid 3px var(--gray);
+    width: fit-content;
+    text-align: center;
+}
+
+.bottom-section {
+    padding: 1.5rem;
+}
+
+h1 {
+    border-color: var(--green);
+    font-size: 5rem;
+    background-color: #212121;
+    border-radius: 1rem;
+    color: var(--white);
+    text-align: center;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: solid 3px var(--gray);
+}
+
+.centre {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.image {
+    border-radius: 1rem;
+    margin-top: 1rem;
+    border: solid 3px var(--gray);
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: 'pFont', sans-serif;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  font-family: 'pFont';
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.activity {
+    padding: 1rem;
+}
+
+.activity-images {
+    display: flex;
+    align-content: center;
+    justify-content: center;    
+    padding: 1rem;
+    
+}
+
+.activity-images img {
+    width: 80vh;
+    height: 80vh;
+    margin-left: 2rem;
+}
+
+.activity-textbox p {
+    width: 70%;
+}
+
+label {
+    font-family: 'pFont', sans-serif;
+}
+
+input {
+    font-family: "pFont", sans-serif;
+}
+
+
+
+
+
